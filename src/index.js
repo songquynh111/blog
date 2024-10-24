@@ -14,19 +14,13 @@ const port = 3000;
 const route = require('./routes');
 
 // Compile scss to css
-const result =              sass.compile(
+const result = sass.compile(
     path.join(__dirname, 'src/resources/scss/app.scss'),
 );
-fs.writeFileSync(
-    
-
-    
-    path.join(__dirname, 'src/public/css/app.css'), result.css);
+fs.writeFileSync(path.join(__dirname, 'src/public/css/app.css'), result.css);
 
 // Static file
-app.use(express.
-    
-    static(path.join(__dirname, 'src/public')));
+app.use(express.static(path.join(__dirname, 'src/public')));
 
 // Middleware
 app.use(
