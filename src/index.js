@@ -25,7 +25,6 @@ fs.writeFileSync(
 // Static file
 app.use(express.
     
-    
     static(path.join(__dirname, 'src/public')));
 
 // Middleware
