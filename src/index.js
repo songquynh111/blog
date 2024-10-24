@@ -19,6 +19,8 @@ const result =              sass.compile(
 );
 fs.writeFileSync(
     
+
+    
     path.join(__dirname, 'src/public/css/app.css'), result.css);
 
 // Static file
