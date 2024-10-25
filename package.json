@@ -18,6 +18,7 @@
   "dependencies": {
     "express": "^4.21.1",
     "express-handlebars": "^8.0.1",
+    "husky": "^9.1.6",
     "nodemon": "^3.1.7"
   },
   "keywords": [
@@ -25,7 +26,6 @@
   ],
   "description": "",
   "devDependencies": {
-    "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
     "morgan": "^1.10.0",
     "prettier": "^3.3.3",
