@@ -27,7 +27,7 @@ app.use(
 // Middleware
 app.use(
                     express.urlencoded({
-                            extended: true,
+                extended: true,
                         }),
 );
 app.use(express.json());
