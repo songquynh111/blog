@@ -26,7 +26,7 @@ app.use(
 
 // Middleware
 app.use(
-                        express.urlencoded({
+                    express.urlencoded({
                             extended: true,
                         }),
 );
