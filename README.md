@@ -1,0 +1,2 @@
+- npx husky init
+- paste "npm run beautiful" in .husky\pre-commit file
