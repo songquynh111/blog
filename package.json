@@ -6,15 +6,12 @@
     "beautiful": "lint-staged",
     "start": "nodemon --inspect src/index.js --legacy-watch ",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-scss": "sass --embed-source-map --watch src/resources/scss:src/public/css/"
+    "watch-scss": "sass --embed-source-map --watch src/resources/scss:src/public/css/",
+    "prepare": "husky install"
   },
   "lint-staged": {
-    "src/**/*.{js,json,scss}":"prettier --single-quote --trailing-comma all --tab-width 4 --write"
-  },
-  "husky": {
-    "hook": {
-      "pre-commit":"lint-staged"
-    }
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write",
+    "*.{js,css,md}": "prettier --write"
   },
   "author": "dainv",
   "license": "ISC",

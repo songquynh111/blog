@@ -20,13 +20,15 @@ const result = sass.compile(
 fs.writeFileSync(path.join(__dirname, 'src/public/css/app.css'), result.css);
 
 // Static file
-app.use(express.static(path.join(__dirname, 'src/public')));
+app.use(
+    
+    express.static(path.join(__dirname, 'src/public')));
 
 // Middleware
 app.use(
-    express.urlencoded({
-        extended: true,
-    }),
+                        express.urlencoded({
+                            extended: true,
+                        }),
 );
 app.use(express.json());
 
