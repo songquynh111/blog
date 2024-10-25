@@ -1,5 +1,5 @@
 import { engine } from "express-handlebars";
-import express from 'express';
+import express from "express";
 import morgan from "morgan";
 import path from "path";
 import fs from "fs";
@@ -20,9 +20,7 @@ const result = sass.compile(
 fs.writeFileSync(path.join(__dirname, "src/public/css/app.css"), result.css);
 
 // Static file
-app.use(
-        
-    express.static(path.join(__dirname, "src/public")));
+app.use(express.static(path.join(__dirname, "src/public")));
 
 // Middleware
 app.use(
