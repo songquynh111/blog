@@ -15,7 +15,11 @@ const route = require("./routes");
 
 // Compile scss to css
 const result = sass.compile(
-  path.join(__dirname, "src/resources/scss/app.scss"),
+  path.join(
+    __dirname,
+
+    "src/resources/scss/app.scss",
+  ),
 );
 fs.writeFileSync(path.join(__dirname, "src/public/css/app.css"), result.css);
 
