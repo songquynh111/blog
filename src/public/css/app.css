@@ -5,3 +5,8 @@ h1 {
 h2 {
   color: blue;
 }
+
+.select-all {
+  width: 120px;
+  margin: 0 16px;
+}
