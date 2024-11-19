@@ -43,8 +43,3 @@ CourseSchema.plugin(mongooseDelete, {
   overrideMethods: "all",
 });
 export default mongoose.model("Course", CourseSchema);
-plugin(mongooseDelete, {
-    deletedAt: true,
-    overrideMethods: 'all',
-});
-export default mongoose.model('Course', CourseSchema);

@@ -10,4 +10,3 @@ class NewsControllers {
 }
 
 export default new NewsControllers();
-ewsControllers();

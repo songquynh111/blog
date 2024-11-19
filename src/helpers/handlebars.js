@@ -29,8 +29,3 @@ export default {
     return new Handlebars.SafeString(output);
   },
 };
-con}"></i>
-              </a>`;
-        return new Handlebars.SafeString(output);
-    },
-};

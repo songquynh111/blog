@@ -18,7 +18,3 @@ class SiteControllers {
   }
 }
 export default new SiteControllers();
-nder('search');
-    }
-}
-export default new SiteControllers();
