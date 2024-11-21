@@ -5,6 +5,7 @@
   "scripts": {
     "beautiful": "lint-staged",
     "start": "nodemon --inspect src/index.js --legacy-watch ",
+    "dev": "node src/index.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch-scss": "sass --embed-source-map --watch src/resources/scss:src/public/css/",
     "prepare": "husky"
